@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sokszogek.Models", "Sokszogek.Models\Sokszogek.Models.csproj", "{574DFD36-8129-4244-8B09-5286BC720FD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sokszogek.UI", "Sokszogek.UI\Sokszogek.UI.csproj", "{00817E78-89E6-42F6-BE31-2E69319D52E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{574DFD36-8129-4244-8B09-5286BC720FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{574DFD36-8129-4244-8B09-5286BC720FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{574DFD36-8129-4244-8B09-5286BC720FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{574DFD36-8129-4244-8B09-5286BC720FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00817E78-89E6-42F6-BE31-2E69319D52E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00817E78-89E6-42F6-BE31-2E69319D52E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00817E78-89E6-42F6-BE31-2E69319D52E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00817E78-89E6-42F6-BE31-2E69319D52E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E918F40-8366-4893-B6CE-A63FA7CDAF45}
+	EndGlobalSection
+EndGlobal
