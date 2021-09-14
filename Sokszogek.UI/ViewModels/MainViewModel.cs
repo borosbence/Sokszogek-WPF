@@ -4,7 +4,9 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Sokszogek.Models;
+using Sokszogek.UI.Commands;
 
 namespace Sokszogek.UI.ViewModels
 {
@@ -44,6 +46,7 @@ namespace Sokszogek.UI.ViewModels
         public double Kerulet
         {
             get { return _kerulet; }
+            set { SetProperty(ref _kerulet, value); }
         }
 
         private double _terulet;
@@ -51,6 +54,7 @@ namespace Sokszogek.UI.ViewModels
         public double Terulet
         {
             get { return _terulet; }
+            set { SetProperty(ref _terulet, value); }
         }
 
         private ObservableCollection<string> _sokszogList;
@@ -71,46 +75,36 @@ namespace Sokszogek.UI.ViewModels
             }
         }
 
-        private void Szamitas()
-        {
-            switch (_kijeloltElem)
-            {
-                case "Négyzet":
-                    _oldalB = 0; _oldalC = 0;
-                    OnPropertyChanged("OldalB");
-                    OnPropertyChanged("OldalC");
-                    var negyzet = new Negyzet(OldalA);
-                    _kerulet = negyzet.Kerulet();
-                    _terulet = negyzet.Terulet();
-                    OnPropertyChanged("Kerulet");
-                    OnPropertyChanged("Terulet");
-                    break;
-                case "Téglalap":_oldalC = 0;
-                    OnPropertyChanged("OldalC");
-                    var teglalap = new Teglalap(OldalA, OldalB);
-                    _kerulet = teglalap.Kerulet();
-                    _terulet = teglalap.Terulet();
-                    OnPropertyChanged("Kerulet");
-                    OnPropertyChanged("Terulet");
-                    break;
-                case "Háromszög":
-                    var haromszog = new Haromszog(OldalA, OldalB, OldalC);
-                    _kerulet = haromszog.Kerulet();
-                    _terulet = haromszog.Terulet();
-                    OnPropertyChanged("Kerulet");
-                    OnPropertyChanged("Terulet");
-                    break;
-                default:
-                    break;
-            }
-        }
-
         public MainViewModel()
         {
             SokszogList = new ObservableCollection<string>();
             SokszogList.Add("Négyzet");
             SokszogList.Add("Téglalap");
             SokszogList.Add("Háromszög");
+        }
+
+        public void Szamitas()
+        {
+            switch (_kijeloltElem)
+            {
+                case "Négyzet":
+                    var negyzet = new Negyzet(OldalA);
+                    Kerulet = negyzet.Kerulet();
+                    Terulet = negyzet.Terulet();
+                    break;
+                case "Téglalap":
+                    var teglalap = new Teglalap(OldalA, OldalB);
+                    Kerulet = teglalap.Kerulet();
+                    Terulet = teglalap.Terulet();
+                    break;
+                case "Háromszög":
+                    var haromszog = new Haromszog(OldalA, OldalB, OldalC);
+                    Kerulet = haromszog.Kerulet();
+                    Terulet = haromszog.Terulet();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

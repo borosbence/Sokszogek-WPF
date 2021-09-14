@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sokszogek.UI.ViewModels"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d"
         Title="Sokszög kalkulátor" Height="150" Width="500">
     <Window.Resources>
@@ -29,21 +30,23 @@
         </Grid.RowDefinitions>
         <Label Content="_Sokszög típusa" Target="{Binding ElementName=cboxSokszog}" Grid.Column="0" Grid.Row="0"/>
         <ComboBox x:Name="cboxSokszog" ItemsSource="{Binding SokszogList}" SelectedItem="{Binding KijeloltElem}"
-                  Grid.Column="1" Grid.Row="0" Height="20" Width="120" />
+                  Grid.Column="1" Grid.Row="0" Height="20" Width="120" >
+        </ComboBox>
         <Label Content="_Kerület" Target="{Binding ElementName=txtKerulet}" Grid.Column="0" Grid.Row="1" />
-        <TextBox x:Name="txtKerulet" Text="{Binding Path=Kerulet, Mode=OneWay}" IsReadOnly="True"
+        <TextBox x:Name="txtKerulet" Text="{Binding Path=Kerulet}" IsReadOnly="True"
             Grid.Column="1" Grid.Row="1" Height="20" Width="120" />
         <Label Content="_Terület" Target="{Binding ElementName=txtTerulet}" Grid.Column="0" Grid.Row="2"/>
-        <TextBox x:Name="txtTerulet" Text="{Binding Path=Terulet, Mode=OneWay}" IsReadOnly="True"
+        <TextBox x:Name="txtTerulet" Text="{Binding Path=Terulet}" IsReadOnly="True"
             Grid.Column="1" Grid.Row="2" Height="20" Width="120" />
         <Label Content="Oldal _A" Target="{Binding ElementName=txtOldalA}" Margin="10,0,10,0" Grid.Column="2" Grid.Row="0"/>
-        <TextBox x:Name="txtOldalA" Text="{Binding OldalA}"
-            Grid.Column="3" Grid.Row="0" Height="20" Width="120" />
+        <TextBox x:Name="txtOldalA" Text="{Binding OldalA, UpdateSourceTrigger=PropertyChanged}"
+            Grid.Column="3" Grid.Row="0" Height="20" Width="120" >
+        </TextBox>
         <Label Content="Oldal _B" Target="{Binding ElementName=txtOldalB}" Grid.Column="2" Grid.Row="1" Margin="10,0,10,0"/>
-        <TextBox x:Name="txtOldalB" Text="{Binding OldalB}"
+        <TextBox x:Name="txtOldalB" Text="{Binding OldalB, UpdateSourceTrigger=PropertyChanged}"
             Grid.Column="3" Grid.Row="1" Height="20" Width="120" />
         <Label Content="Oldal _C" Target="{Binding ElementName=txtOldalC}" Grid.Column="2" Grid.Row="2" Margin="10,0,10,0"/>
-        <TextBox x:Name="txtOldalC" Text="{Binding OldalC}"
+        <TextBox x:Name="txtOldalC" Text="{Binding OldalC, UpdateSourceTrigger=PropertyChanged}"
             Grid.Column="3" Grid.Row="2" Height="20" Width="120" />
     </Grid>
 </Window>
