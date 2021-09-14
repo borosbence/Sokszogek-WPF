@@ -15,11 +15,19 @@ namespace Sokszogek.Models
 
         public override double Kerulet()
         {
+            if (oldalA <= 0)
+            {
+                return double.NaN;
+            }
             return 4 * oldalA;
         }
 
         public override double Terulet()
         {
+            if (oldalA <= 0)
+            {
+                return double.NaN;
+            }
             return Math.Pow(oldalA, 2);
         }
     }

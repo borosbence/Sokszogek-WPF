@@ -17,11 +17,20 @@ namespace Sokszogek.Models
 
         public override double Kerulet()
         {
+            if (oldalA <= 0 || oldalB <= 0 || oldalC <= 0)
+            {
+                return double.NaN;
+            }
             return oldalA + oldalB + oldalC;
         }
 
         public override double Terulet()
         {
+            if (oldalA <= 0 || oldalB <= 0 || oldalC <= 0)
+            {
+                return double.NaN;
+            }
+            
             // Hérón képlet
             double s = (oldalA + oldalB + oldalC) / 2;
             double terulet = Math.Sqrt(s *

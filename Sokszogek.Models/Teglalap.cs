@@ -16,11 +16,19 @@ namespace Sokszogek.Models
 
         public override double Kerulet()
         {
+            if (oldalA <= 0 || oldalB <= 0)
+            {
+                return double.NaN;
+            }
             return (2 * oldalA) + (2 * oldalB);
         }
 
         public override double Terulet()
         {
+            if (oldalA <= 0 || oldalB <= 0)
+            {
+                return double.NaN;
+            }
             return oldalA * oldalB;
         }
     }
