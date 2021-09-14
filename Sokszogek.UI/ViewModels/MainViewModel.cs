@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Sokszogek.Models;
-using Sokszogek.UI.Commands;
 
 namespace Sokszogek.UI.ViewModels
 {
