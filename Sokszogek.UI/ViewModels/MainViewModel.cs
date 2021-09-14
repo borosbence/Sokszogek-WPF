@@ -76,13 +76,17 @@ namespace Sokszogek.UI.ViewModels
             switch (_kijeloltElem)
             {
                 case "Négyzet":
+                    _oldalB = 0; _oldalC = 0;
+                    OnPropertyChanged("OldalB");
+                    OnPropertyChanged("OldalC");
                     var negyzet = new Negyzet(OldalA);
                     _kerulet = negyzet.Kerulet();
                     _terulet = negyzet.Terulet();
                     OnPropertyChanged("Kerulet");
                     OnPropertyChanged("Terulet");
                     break;
-                case "Téglalap":
+                case "Téglalap":_oldalC = 0;
+                    OnPropertyChanged("OldalC");
                     var teglalap = new Teglalap(OldalA, OldalB);
                     _kerulet = teglalap.Kerulet();
                     _terulet = teglalap.Terulet();
