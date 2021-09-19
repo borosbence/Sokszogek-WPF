@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sokszogek.Mobile.Views.MainPage"
+             xmlns:local="clr-namespace:Sokszogek.ViewModels;assembly=Sokszogek.ViewModels">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="16">
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.BindingContext>
+        <local:MainViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout Margin="10">
+        <Label Text="Sokszög típusa"/>
+        <Picker x:Name="cboxSokszog" ItemsSource="{Binding SokszogList}" SelectedItem="{Binding KijeloltElem}"
+            HeightRequest="40" WidthRequest="220" />
+        <Label Text="Kerület" />
+        <Entry x:Name="txtKerulet" Text="{Binding Path=Kerulet}" IsReadOnly="True"
+            HeightRequest="40" WidthRequest="220" />
+        <Label Text="Terület"/>
+        <Entry x:Name="txtTerulet" Text="{Binding Path=Terulet}" IsReadOnly="True"
+            HeightRequest="40" WidthRequest="220" Margin="0,0,0,40" />
+        <Label Text="Oldal A"/>
+        <Entry x:Name="txtOldalA" Text="{Binding OldalA}"
+            HeightRequest="40" WidthRequest="220" />
+        <Label Text="Oldal B"/>
+        <Entry x:Name="txtOldalB" Text="{Binding OldalB}"
+            HeightRequest="40" WidthRequest="220" />
+        <Label Text="Oldal C"/>
+        <Entry x:Name="txtOldalC" Text="{Binding OldalC}"
+            HeightRequest="40" WidthRequest="220" />
+    </StackLayout>
+</ContentPage>

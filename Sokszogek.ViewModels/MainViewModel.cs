@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Sokszogek.Models;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Sokszogek.Models;
 
-namespace Sokszogek.UI.ViewModels
+namespace Sokszogek.ViewModels
 {
-    class MainViewModel : ViewModelBase
+    public class MainViewModel : ViewModelBase
     {
         private double _oldalA;
         public double OldalA
         {
             get { return _oldalA; }
-            set {
+            set
+            {
                 SetProperty(ref _oldalA, value);
                 Szamitas();
             }
@@ -25,7 +20,8 @@ namespace Sokszogek.UI.ViewModels
         public double OldalB
         {
             get { return _oldalB; }
-            set { 
+            set
+            {
                 SetProperty(ref _oldalB, value);
                 Szamitas();
             }
@@ -35,7 +31,8 @@ namespace Sokszogek.UI.ViewModels
         public double OldalC
         {
             get { return _oldalC; }
-            set { 
+            set
+            {
                 SetProperty(ref _oldalC, value);
                 Szamitas();
             }
@@ -68,7 +65,8 @@ namespace Sokszogek.UI.ViewModels
         public string KijeloltElem
         {
             get { return _kijeloltElem; }
-            set {
+            set
+            {
                 _kijeloltElem = value;
                 Szamitas();
             }
@@ -76,10 +74,12 @@ namespace Sokszogek.UI.ViewModels
 
         public MainViewModel()
         {
-            SokszogList = new ObservableCollection<string>();
-            SokszogList.Add("Négyzet");
-            SokszogList.Add("Téglalap");
-            SokszogList.Add("Háromszög");
+            SokszogList = new ObservableCollection<string>
+            {
+                "Négyzet",
+                "Téglalap",
+                "Háromszög"
+            };
         }
 
         public void Szamitas()

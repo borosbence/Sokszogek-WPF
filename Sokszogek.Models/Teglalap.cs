@@ -8,28 +8,28 @@ namespace Sokszogek.Models
 {
     public class Teglalap : Sokszog
     {
-        public double oldalB { get; set; }
+        public double OldalB { get; set; }
         public Teglalap(double A, double B) : base(A)
         {
-            oldalB = B;
+            OldalB = B;
         }
 
         public override double Kerulet()
         {
-            if (oldalA <= 0 || oldalB <= 0)
+            if (OldalA <= 0 || OldalB <= 0)
             {
                 return double.NaN;
             }
-            return (2 * oldalA) + (2 * oldalB);
+            return (2 * OldalA) + (2 * OldalB);
         }
 
         public override double Terulet()
         {
-            if (oldalA <= 0 || oldalB <= 0)
+            if (OldalA <= 0 || OldalB <= 0)
             {
                 return double.NaN;
             }
-            return oldalA * oldalB;
+            return OldalA * OldalB;
         }
     }
 }

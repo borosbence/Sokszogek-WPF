@@ -1,4 +1,4 @@
-﻿using Sokszogek.UI.ViewModels;
+﻿using Sokszogek.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

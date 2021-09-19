@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sokszogek.Models", "Sokszogek.Models\Sokszogek.Models.csproj", "{574DFD36-8129-4244-8B09-5286BC720FD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sokszogek.WPF", "Sokszogek.UI\Sokszogek.WPF.csproj", "{00817E78-89E6-42F6-BE31-2E69319D52E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sokszogek.UI", "Sokszogek.UI\Sokszogek.UI.csproj", "{00817E78-89E6-42F6-BE31-2E69319D52E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sokszogek.ViewModels", "Sokszogek.ViewModels\Sokszogek.ViewModels.csproj", "{80B4B82E-7073-45D1-8B3F-76600A82C686}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sokszogek.Models", "Sokszogek.Models\Sokszogek.Models.csproj", "{66B22F00-1782-4F8F-BD2E-2F51A58C1319}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sokszogek.Mobile", "Sokszogek.Mobile\Sokszogek.Mobile\Sokszogek.Mobile.csproj", "{A5095D64-E2C3-46A7-AEE0-80B5021927C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sokszogek.Mobile.Android", "Sokszogek.Mobile\Sokszogek.Mobile.Android\Sokszogek.Mobile.Android.csproj", "{75861174-2D72-4713-A1CD-7D64EC78AC0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +19,28 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{574DFD36-8129-4244-8B09-5286BC720FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{574DFD36-8129-4244-8B09-5286BC720FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{574DFD36-8129-4244-8B09-5286BC720FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{574DFD36-8129-4244-8B09-5286BC720FD3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{00817E78-89E6-42F6-BE31-2E69319D52E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{00817E78-89E6-42F6-BE31-2E69319D52E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00817E78-89E6-42F6-BE31-2E69319D52E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00817E78-89E6-42F6-BE31-2E69319D52E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B4B82E-7073-45D1-8B3F-76600A82C686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B4B82E-7073-45D1-8B3F-76600A82C686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B4B82E-7073-45D1-8B3F-76600A82C686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B4B82E-7073-45D1-8B3F-76600A82C686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66B22F00-1782-4F8F-BD2E-2F51A58C1319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66B22F00-1782-4F8F-BD2E-2F51A58C1319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66B22F00-1782-4F8F-BD2E-2F51A58C1319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66B22F00-1782-4F8F-BD2E-2F51A58C1319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5095D64-E2C3-46A7-AEE0-80B5021927C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5095D64-E2C3-46A7-AEE0-80B5021927C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5095D64-E2C3-46A7-AEE0-80B5021927C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5095D64-E2C3-46A7-AEE0-80B5021927C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75861174-2D72-4713-A1CD-7D64EC78AC0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75861174-2D72-4713-A1CD-7D64EC78AC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75861174-2D72-4713-A1CD-7D64EC78AC0A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{75861174-2D72-4713-A1CD-7D64EC78AC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75861174-2D72-4713-A1CD-7D64EC78AC0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75861174-2D72-4713-A1CD-7D64EC78AC0A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

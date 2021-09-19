@@ -8,35 +8,35 @@ namespace Sokszogek.Models
 {
     public class Haromszog : Teglalap
     {
-        public double oldalC { get; set; }
+        public double OldalC { get; set; }
 
         public Haromszog(double A, double B, double C) : base(A, B)
         {
-            oldalC = C;
+            OldalC = C;
         }
 
         public override double Kerulet()
         {
-            if (oldalA <= 0 || oldalB <= 0 || oldalC <= 0)
+            if (OldalA <= 0 || OldalB <= 0 || OldalC <= 0)
             {
                 return double.NaN;
             }
-            return oldalA + oldalB + oldalC;
+            return OldalA + OldalB + OldalC;
         }
 
         public override double Terulet()
         {
-            if (oldalA <= 0 || oldalB <= 0 || oldalC <= 0)
+            if (OldalA <= 0 || OldalB <= 0 || OldalC <= 0)
             {
                 return double.NaN;
             }
             
             // Hérón képlet
-            double s = (oldalA + oldalB + oldalC) / 2;
+            double s = (OldalA + OldalB + OldalC) / 2;
             double terulet = Math.Sqrt(s *
-                                (s - oldalA) *
-                                (s - oldalB) *
-                                (s - oldalC));
+                                (s - OldalA) *
+                                (s - OldalB) *
+                                (s - OldalC));
             return terulet;
         }
     }

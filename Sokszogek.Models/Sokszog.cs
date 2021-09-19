@@ -8,12 +8,13 @@ namespace Sokszogek.Models
 {
     public abstract class Sokszog
     {
-        public double oldalA { get; set; }
+        public double OldalA { get; set; }
         public abstract double Kerulet();
         public abstract double Terulet();
-        public Sokszog(double A)
+
+        protected Sokszog(double A)
         {
-            oldalA = A;
+            OldalA = A;
         }
     }
 }

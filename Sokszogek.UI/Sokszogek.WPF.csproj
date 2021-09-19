@@ -7,11 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Sokszogek.Models\Sokszogek.Models.csproj" />
+    <ProjectReference Include="..\Sokszogek.ViewModels\Sokszogek.ViewModels.csproj">
+      <Private>true</Private>
+    </ProjectReference>
   </ItemGroup>
 
 </Project>
