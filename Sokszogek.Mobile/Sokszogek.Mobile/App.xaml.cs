@@ -1,4 +1,4 @@
-﻿using Sokszogek.Mobile.Views;
+﻿using Sokszogek.Mobile;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

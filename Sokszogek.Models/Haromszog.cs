@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sokszogek.Models
 {
@@ -30,7 +26,7 @@ namespace Sokszogek.Models
             {
                 return double.NaN;
             }
-            
+
             // Hérón képlet
             double s = (OldalA + OldalB + OldalC) / 2;
             double terulet = Math.Sqrt(s *
