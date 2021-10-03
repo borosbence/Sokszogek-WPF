@@ -22,6 +22,7 @@ namespace Sokszogek.UI
     {
         public MainWindow()
         {
+            FrameworkCompatibilityPreferences.KeepTextBoxDisplaySynchronizedWithTextProperty = false;
             InitializeComponent();
             //this.DataContext = new MainViewModel();
         }
