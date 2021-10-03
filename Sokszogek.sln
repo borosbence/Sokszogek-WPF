@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sokszogek.WPF", "Sokszogek.UI\Sokszogek.WPF.csproj", "{00817E78-89E6-42F6-BE31-2E69319D52E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sokszogek.WPF", "Sokszogek.WPF\Sokszogek.WPF.csproj", "{00817E78-89E6-42F6-BE31-2E69319D52E1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sokszogek.ViewModels", "Sokszogek.ViewModels\Sokszogek.ViewModels.csproj", "{80B4B82E-7073-45D1-8B3F-76600A82C686}"
 EndProject
